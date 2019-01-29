@@ -79,19 +79,19 @@ Related searches in the documentation also showed we can check for a [mouse down
 
 Unlike **OnMouseOver()**, these do not require colliders and work a bit differently. For example, **GetMouseButtonDown** can be triggered at any time, regardless of whether the mouse is over anything. In order to check if the mouse is down, we need to put **GetMouseButtonDown** inside of the Update loop. This code snippet shows the difference:
 
-'''
+```csharp
 void OnMouseOver() {
 //Do something if the mouse is over the collider attached to this game object
 }
-'''
-'''
+```
+```csharp
 // Update is called once per frame
 void Update(){
         if (Input.GetMouseButtonDown(0)){
           //If the primary mouse button is pressed down, do something here
         }         
 }
-'''
+```
 
 This Git project will go ahead and create these basic script stubs and organize the initial scene for you. Follow the video tutorial to write the actual code to make things work.
 
