@@ -8,10 +8,10 @@ Concept: The user places a target on the ground and then they use their voice to
 #### Place target script:
 
 * On mouse down
-
- * target appears
- * target is placed on the ground
- * target follows the mouse pointer
+   
+   target appears
+   target is placed on the ground
+   target follows the mouse pointer
 
 * On mouse up
  * target is placed
