@@ -97,3 +97,12 @@ I have created the basic script stubs, with comments to explain what code should
 
 ## Step 4 : Watch the video and write the scripts
 In the video, I will describe what I am doing as I write out the actual functions.
+
+## Links to Documentation used in this project
+
+[MonoBehaviors](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html)
+[Input](https://docs.unity3d.com/ScriptReference/Input.html)
+[ScreenToWorld](https://docs.unity3d.com/ScriptReference/Camera.ScreenToWorldPoint.html)
+[Microphone](https://docs.unity3d.com/ScriptReference/Microphone.html)
+[Navigation](https://docs.unity3d.com/ScriptReference/UnityEngine.AIModule.html)
+
