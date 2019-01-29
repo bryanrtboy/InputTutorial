@@ -93,7 +93,7 @@ void Update(){
 }
 ```
 
-This Git project will go ahead and create these basic script stubs and organize the initial scene for you. Follow the video tutorial to write the actual code to make things work.
+I have created the basic script stubs, with comments to explain what code should be written and I have created the initial scene for you. Follow the video tutorial to write the actual code to make things work.
 
 ## Step 4 : Watch the video and write the scripts
 In the video, I will describe what I am doing as I write out the actual functions.
