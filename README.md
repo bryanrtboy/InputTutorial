@@ -100,9 +100,9 @@ In the video, I will describe what I am doing as I write out the actual function
 
 ## Links to Documentation used in this project
 
-[MonoBehaviors](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html)
-[Input](https://docs.unity3d.com/ScriptReference/Input.html)
-[ScreenToWorld](https://docs.unity3d.com/ScriptReference/Camera.ScreenToWorldPoint.html)
-[Microphone](https://docs.unity3d.com/ScriptReference/Microphone.html)
-[Navigation](https://docs.unity3d.com/ScriptReference/UnityEngine.AIModule.html)
+* [MonoBehaviors](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html)
+* [Input](https://docs.unity3d.com/ScriptReference/Input.html)
+* [ScreenToWorld](https://docs.unity3d.com/ScriptReference/Camera.ScreenToWorldPoint.html)
+* [Microphone](https://docs.unity3d.com/ScriptReference/Microphone.html)
+* [Navigation](https://docs.unity3d.com/ScriptReference/UnityEngine.AIModule.html)
 
