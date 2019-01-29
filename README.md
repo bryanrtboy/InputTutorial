@@ -8,6 +8,7 @@ By following along in this tutorial you will learn:
    * a Game Manager object (in this case following a Singleton pattern)
    * Organizing scripts for a single function, i.e. 'listen', 'place' or 'move'
 * How to work with various forms of input
+* Using ray casting and converting screenspace (mouse coordinates) to worldspace (where the frog lives)
 * Introduction to the Navigation system
 
 ## Concept
