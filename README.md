@@ -40,7 +40,11 @@ First we need to write out, to the best of our knowledge, what needs to happen a
 
 ## Step 2: Create scripts as stubs
 
-At this point, simply create and name the scripts, putting a brief comment at the top for what this script is going to do. Some rules of thumb:
+At this point, simply create and name the scripts, putting a brief comment at the top for what this script is going to do. I've already noticed that several of these scripts need to 'talk' to each other, the frog needs to know the target was placed and where it is. The audio script needs to tell the frog to move. I'm starting to think that one of these scripts needs to be a Game Manager, letting everyone else know what's going on. We'll probably place that on an object that we call GameManager in the scene view as well. 
+
+The others will just be placed on the object that needs to know, i.e. the frog or obstacle.
+
+Some rules of thumb when naming:
 
 * Name the scripts a name that says what it is supposed to do. Don't abbreviate! That's so 80's. Modern practices use longer, more descriptive script names that 'self-document' themselves
 * Don't use common names, like 'Transform'. That's a reserved name, used by Unity and will cause your program to crash. Some people use their initials as a prefix, i.e. 'BLTransform' is fine.
@@ -48,5 +52,22 @@ At this point, simply create and name the scripts, putting a brief comment at th
 ## Step 3: Create functions in each script
 
 Using your pseudocode as a start, create a new function in each script or use an existing Unity function when you can. We'll start with the Place target Script:
+
+It turns out, there are several [MonoBehaviors](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) built into Unity that can help. The 'Start' and 'Update' are automatically created when you create a new script and are the most basic MonoBehavior. Looking at the [MonoBehavior Documentation](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) I found these:
+
+* **OnMouseDown**	OnMouseDown is called when the user has pressed the mouse button while over the GUIElement or Collider.
+* **OnMouseDrag**	OnMouseDrag is called when the user has clicked on a GUIElement or Collider and is still holding down the mouse.
+* **OnMouseEnter**	Called when the mouse enters the GUIElement or Collider.
+* **OnMouseExit**	Called when the mouse is not any longer over the GUIElement or Collider.
+* **OnMouseOver**	Called every frame while the mouse is over the GUIElement or Collider.
+* **OnMouseUp**	OnMouseUp is called when the user has released the mouse button.
+
+Notice that some of those require a GUI or Colliders. We're not really working with GUI elements, we want the target to be on the ground in the 3D world. That means the ground will have to have a collider if we want to use that MonoBehavior.
+
+Related searches in the documentation also showed we can just capture a mouse down as an [Input](https://docs.unity3d.com/ScriptReference/Input.html) check. This is like a keyboard button being pressed and does not require colliders. Also, unlike the above MonoBehaviors, the input check is not it's own function, but needs to be put inside of the Update loop. Compare the documentation to see examples.
+
+* **GetMouseButton**	Returns whether the given mouse button is held down.
+* **GetMouseButtonDown**	Returns true during the frame the user pressed the given mouse button.
+* **GetMouseButtonUp**	Returns true during the frame the user releases the given mouse button. 
 
 
