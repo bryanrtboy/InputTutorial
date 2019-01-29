@@ -7,7 +7,7 @@ Concept: The user places a target on the ground and then they use their voice to
 
 First we need to write out, to the best of our knowledge, what needs to happen and get an idea of how many scripts to write. Based on the concept, here is what I think we'll need:
 
-#### Place target script:
+#### Script: Place target:
 
 * On mouse down
    * target appears
@@ -18,18 +18,19 @@ First we need to write out, to the best of our knowledge, what needs to happen a
    * target is placed
    * frog knows where the target is, but does not move yet
 
-#### Trigger Movement by audio input script
+#### Script: audio input trigger script
 
 * Microphone is turned on
 * Microphone audio is checked for volume
 * If volume is over X, frog is told to move
+* For testing, let's also include a keyboard command that does the same thing - 'g' seems like a good choice
 
-#### Move to the target (placed on the frog)
+#### Script: Move to the target (placed on the frog)
 
 * Frog waits to be told to move
 * Using the Navigation system, move to the target on command
 
-#### Move using Joystick input (placed on a Navigation Obstacle)
+#### Script: Joystick input (placed on a Navigation Obstacle)
 
 * Object needs to be an obstacle (using the Navigation system here)
 * Joystick axis left/right moves obstacle left or right on the world X axis
