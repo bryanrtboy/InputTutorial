@@ -58,7 +58,9 @@ Some rules of thumb when naming:
 ## Step 3: Create functions in each script
 Using your pseudocode as a start, create a new function in each script or use an existing Unity function when you can. We'll start with the Place target Script:
 
-It turns out, there are several [MonoBehaviors](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) built into Unity that can help. The 'Start' and 'Update' are automatically created when you create a new script and are the most basic MonoBehavior. Looking at the [MonoBehavior Documentation](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) I found these:
+It turns out, there are several [MonoBehaviors](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) built into Unity that can help. MonoBehaviour is the base class from which every Unity script derives.
+
+The MonoBehaviors **Start()** and **Update()** are automatically created when you create a new script. Looking at the [MonoBehavior Documentation](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) I found:
 
 * **OnMouseDown**	OnMouseDown is called when the user has pressed the mouse button while over the GUIElement or Collider.
 * **OnMouseDrag**	OnMouseDrag is called when the user has clicked on a GUIElement or Collider and is still holding down the mouse.
@@ -67,13 +69,29 @@ It turns out, there are several [MonoBehaviors](https://docs.unity3d.com/ScriptR
 * **OnMouseOver**	Called every frame while the mouse is over the GUIElement or Collider.
 * **OnMouseUp**	OnMouseUp is called when the user has released the mouse button.
 
-Notice that some of those require a GUI or Colliders. We're not really working with GUI elements, we want the target to be on the ground in the 3D world. That means the ground will have to have a collider if we want to use that MonoBehavior.
+I think the **OnMouseOver()** function looks very promising for placing our target. I also notice that it requires a GUI or Collider. Colliders are on game objects in the 3D world, so I'll note that we probably need to put a collider on our ground.
 
-Related searches in the documentation also showed we can just capture a mouse down as an [Input](https://docs.unity3d.com/ScriptReference/Input.html) check. This is like a keyboard button being pressed and does not require colliders. Also, unlike the above MonoBehaviors, the input check is not it's own function, but needs to be put inside of the Update loop. Compare the documentation to see examples.
+Related searches in the documentation also showed we can check for a [mouse down input event](https://docs.unity3d.com/ScriptReference/Input.html):
 
 * **GetMouseButton**	Returns whether the given mouse button is held down.
 * **GetMouseButtonDown**	Returns true during the frame the user pressed the given mouse button.
-* **GetMouseButtonUp**	Returns true during the frame the user releases the given mouse button. 
+* **GetMouseButtonUp**	Returns true during the frame the user releases the given mouse button.
+
+Unlike **OnMouseOver()**, these do not require colliders and work a bit differently. For example, **GetMouseButtonDown** can be triggered at any time, regardless of whether the mouse is over anything. In order to check if the mouse is down, we need to put **GetMouseButtonDown** inside of the Update loop. This code snippet shows the difference:
+
+'''
+void OnMouseOver() {
+//Do something if the mouse is over the collider attached to this game object
+}
+'''
+'''
+// Update is called once per frame
+void Update(){
+        if (Input.GetMouseButtonDown(0)){
+          //If the primary mouse button is pressed down, do something here
+        }         
+}
+'''
 
 This Git project will go ahead and create these basic script stubs and organize the initial scene for you. Follow the video tutorial to write the actual code to make things work.
 
