@@ -21,11 +21,11 @@ First we need to write out, to the best of our knowledge, what needs to happen a
 #### Script: Place target:
 * On mouse down
    * target appears
-   * target is placed on the ground
-   * target follows the mouse pointer
+   * target is placed on the ground below the mouse pointer
+   * target follows as the mouse pointer moves
 
 * On mouse up
-   * target is placed
+   * target is placed and becomes a valid target
    * frog knows where the target is, but does not move yet
 
 #### Script: audio input trigger script
