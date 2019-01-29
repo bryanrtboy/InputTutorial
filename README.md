@@ -23,7 +23,9 @@ First we need to write out, to the best of our knowledge, what needs to happen a
 * Microphone is turned on
 * Microphone audio is checked for volume
 * If volume is over X, frog is told to move
-* For testing, let's also include a keyboard command that does the same thing - 'g' seems like a good choice
+* For testing, let's make keyboard commands to do stuff
+    * 'g' to make the frog Go
+    * 'r' to turn on the microphone
 
 #### Script: Move to the target (placed on the frog)
 
