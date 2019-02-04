@@ -1,10 +1,17 @@
 # InputTutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pLCoxqVVT0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=pLCoxqVVT0I
 " target="_blank"><img src="http://img.youtube.com/vi/pLCoxqVVT0I/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+alt="Input Part 1: Getting Started" width="240" height="180" border="10" /></a>
+Getting Started
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=rfxKZS_6Uk4
+" target="_blank"><img src="http://img.youtube.com/vi/rfxKZS_6Uk4/0.jpg" 
+alt="Input Part 2: Joystick Input" width="240" height="180" border="10" /></a>
+Joystick Input
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=y_efMcPcyNM
+" target="_blank"><img src="http://img.youtube.com/vi/y_efMcPcyNM/0.jpg" 
+alt="Input Part 3: Microphone Input" width="240" height="180" border="10" /></a>
+Microphone Input
 
 ## Principles that you will learn
 By following along in this tutorial you will learn:
