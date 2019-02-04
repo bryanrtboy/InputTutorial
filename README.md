@@ -1,17 +1,7 @@
 # InputTutorial
+To complete this tutorial, first download this project as a .zip file or clone into your own repository (better). Then read this overview of what will be covered, the concepts and note the links to resources that will be referenced. At the bottom of this page, you will find 3 video tutorials that show how I found/wrote and rewrote the code to make this concept work.
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=pLCoxqVVT0I
-" target="_blank"><img src="http://img.youtube.com/vi/pLCoxqVVT0I/0.jpg" 
-alt="Input Part 1: Getting Started" width="240" height="180" border="10" /></a>
-Getting Started
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=rfxKZS_6Uk4
-" target="_blank"><img src="http://img.youtube.com/vi/rfxKZS_6Uk4/0.jpg" 
-alt="Input Part 2: Joystick Input" width="240" height="180" border="10" /></a>
-Joystick Input
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=y_efMcPcyNM
-" target="_blank"><img src="http://img.youtube.com/vi/y_efMcPcyNM/0.jpg" 
-alt="Input Part 3: Microphone Input" width="240" height="180" border="10" /></a>
-Microphone Input
+Besides learning about input devices, you'll observe a workflow for accomplishing your goals through pseudocode, documentation and copy/paste! No worries, that's how most people start learning to code!
 
 ## Principles that you will learn
 By following along in this tutorial you will learn:
@@ -123,4 +113,22 @@ In the video, I will describe what I am doing as I write out the actual function
 * [ScreenToWorld](https://docs.unity3d.com/ScriptReference/Camera.ScreenToWorldPoint.html)
 * [Microphone](https://docs.unity3d.com/ScriptReference/Microphone.html)
 * [Navigation](https://docs.unity3d.com/ScriptReference/UnityEngine.AIModule.html)
+
+##Video Tutorials
+
+###Getting Started
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=pLCoxqVVT0I
+" target="_blank"><img src="http://img.youtube.com/vi/pLCoxqVVT0I/0.jpg" 
+alt="Input Part 1: Getting Started" width="240" height="180" border="10" /></a>
+
+###Joystick Input
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=rfxKZS_6Uk4
+" target="_blank"><img src="http://img.youtube.com/vi/rfxKZS_6Uk4/0.jpg" 
+alt="Input Part 2: Joystick Input" width="240" height="180" border="10" /></a>
+
+###Microphone Input
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=y_efMcPcyNM
+" target="_blank"><img src="http://img.youtube.com/vi/y_efMcPcyNM/0.jpg" 
+alt="Input Part 3: Microphone Input" width="240" height="180" border="10" /></a>
+
 
