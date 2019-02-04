@@ -2,6 +2,10 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pLCoxqVVT0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=pLCoxqVVT0I
+" target="_blank"><img src="http://img.youtube.com/vi/pLCoxqVVT0I/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 ## Principles that you will learn
 By following along in this tutorial you will learn:
 * A workflow for starting a new project idea
