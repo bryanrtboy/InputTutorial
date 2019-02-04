@@ -22,6 +22,7 @@ Stretch goals:
 * use an animated [agent character](https://unity3d.com/learn/tutorials/topics/navigation/animated-character?playlist=17105)
 * use [voice recognition](https://github.com/watson-developer-cloud/unity-sdk/tree/master/Scripts/Services/SpeechToText/v1) and a word like 'Go'
 * use [AI to sense the tone](https://github.com/watson-developer-cloud/unity-sdk/tree/master/Scripts/Services/ToneAnalyzer/v3) of a conversation where the frog must be motivated to move
+* learn advanced navigation using [characters and patrolling agents](https://docs.unity3d.com/Manual/nav-HowTos.html)
 
 ## Step 1: Psuedo code
 First we need to write out, to the best of our knowledge, what needs to happen and get an idea of how many scripts to write. Based on the concept, here is what I think we'll need:
