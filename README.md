@@ -1,5 +1,7 @@
 # InputTutorial
-Currently, this is just an empty project. There will be a video tutorial posted, and then I will post this project as a stub for you to complete based on the video.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pLCoxqVVT0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Principles that you will learn
 By following along in this tutorial you will learn:
 * A workflow for starting a new project idea
