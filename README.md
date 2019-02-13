@@ -1,5 +1,8 @@
 # InputTutorial
-Currently, this is just an empty project. There will be a video tutorial posted, and then I will post this project as a stub for you to complete based on the video.
+To complete this tutorial, first download this project as a .zip file or clone into your own repository (better). Then read this overview of what will be covered, the concepts and note the links to resources that will be referenced. At the bottom of this page, you will find 3 video tutorials that show how I found/wrote and rewrote the code to make this concept work.
+
+Besides learning about input devices, you'll observe a workflow for accomplishing your goals through pseudocode, documentation and copy/paste! No worries, that's how most people start learning to code!
+
 ## Principles that you will learn
 By following along in this tutorial you will learn:
 * A workflow for starting a new project idea
@@ -19,6 +22,7 @@ Stretch goals:
 * use an animated [agent character](https://unity3d.com/learn/tutorials/topics/navigation/animated-character?playlist=17105)
 * use [voice recognition](https://github.com/watson-developer-cloud/unity-sdk/tree/master/Scripts/Services/SpeechToText/v1) and a word like 'Go'
 * use [AI to sense the tone](https://github.com/watson-developer-cloud/unity-sdk/tree/master/Scripts/Services/ToneAnalyzer/v3) of a conversation where the frog must be motivated to move
+* learn advanced navigation using [characters and patrolling agents](https://docs.unity3d.com/Manual/nav-HowTos.html)
 
 ## Step 1: Psuedo code
 First we need to write out, to the best of our knowledge, what needs to happen and get an idea of how many scripts to write. Based on the concept, here is what I think we'll need:
@@ -110,4 +114,22 @@ In the video, I will describe what I am doing as I write out the actual function
 * [ScreenToWorld](https://docs.unity3d.com/ScriptReference/Camera.ScreenToWorldPoint.html)
 * [Microphone](https://docs.unity3d.com/ScriptReference/Microphone.html)
 * [Navigation](https://docs.unity3d.com/ScriptReference/UnityEngine.AIModule.html)
+
+##Video Tutorials
+
+###Getting Started
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=pLCoxqVVT0I
+" target="_blank"><img src="http://img.youtube.com/vi/pLCoxqVVT0I/0.jpg" 
+alt="Input Part 1: Getting Started" width="240" height="180" border="10" /></a>
+
+###Joystick Input
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=rfxKZS_6Uk4
+" target="_blank"><img src="http://img.youtube.com/vi/rfxKZS_6Uk4/0.jpg" 
+alt="Input Part 2: Joystick Input" width="240" height="180" border="10" /></a>
+
+###Microphone Input
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=y_efMcPcyNM
+" target="_blank"><img src="http://img.youtube.com/vi/y_efMcPcyNM/0.jpg" 
+alt="Input Part 3: Microphone Input" width="240" height="180" border="10" /></a>
+
 
