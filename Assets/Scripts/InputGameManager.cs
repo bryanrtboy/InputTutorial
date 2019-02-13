@@ -25,20 +25,44 @@ public class InputGameManager : MonoBehaviour
     void Awake()
     {
         //Enforce the Singleton pattern, there can be only one InputGameManager in the scene
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
 
     }
 
     // Start is called before the first frame update
     void Start()
     {
-
+        if (m_targetIndicator != null)
+            m_targetIndicator.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
         //Check for the mouse being down, if true, activate the targetIndicator
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (m_targetIndicator != null && !m_targetIndicator.activeInHierarchy)
+                m_targetIndicator.SetActive(true);
 
+            RaycastHit hitInfo = new RaycastHit();
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray.origin, ray.direction, out hitInfo))
+            {
+                m_targetPosition = hitInfo.point;
+            }
+
+            m_targetIndicator.transform.position = new Vector3(hitInfo.point.x, hitInfo.point.y + .1f, hitInfo.point.z);
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            m_okToMove = true;
+            m_targetIndicator.SetActive(false);
+        }
 
     }
 
@@ -46,7 +70,23 @@ public class InputGameManager : MonoBehaviour
     //De-activate the indicator if it's OK to move and set the target position
     public void ItsOKtoMove()
     {
+        if (!m_okToMove)
+        {
+            m_okToMove = true;
+            Invoke("ResetMove", 3f);
+        }
 
     }
+
+    public Vector3 GetDestinationPoint()
+    {
+        return m_targetPosition;
+    }
+
+    void ResetMove()
+    {
+        m_okToMove = false;
+    }
+
 
 }
